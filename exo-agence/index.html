@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Cadet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background-image: url('/exo-agence/img/space.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .destination-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Space Cadet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore the world with our curated travel experiences.</p>
+            <a href="#destinations" class="btn btn-light btn-lg">Explore Destinations</a>
+        </div>
+    </section>
+
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Popular Destinations</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card destination-card">
+                        <img src="/exo-agence/img/maldives.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Maldives</h5>
+                            <p class="card-text">Une superbe escapade tropicale
+                                De délicieuses vacances à la plage vous attendent aux Maldives.
+                                Vous adorerez les activités de plage et les visites d’île en île. Les Maldives sont également une destination idéale pour des vacances reposantes..</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card destination-card">
+                        <img src="/exo-agence/img/geneva.avif">
+                        <div class="card-body">
+                            <h5 class="card-title">Genève, Suisse</h5>
+                            <p class="card-text">Capitale mondiale de la paix
+                                Capitale de la Suisse et belle ville au bord du lac, Genève abrite de nombreuses organisations internationales comme l'ONU. Elle est connue pour sa beauté naturelle à couper le souffle et son ambiance gastronomique, nocturne et culturelle amusante.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card destination-card">
+                        <img src="/exo-agence/img/Bhu.avif">
+                        <div class="card-body">
+                            <h5 class="card-title">Bhubaneshwar</h5>
+                            <p class="card-text">Ville-temple de l'Inde
+                                Traduisant littéralement le Seigneur de l'Univers, Bhubaneswar est une ancienne ville d'Odisha qui regorge de plusieurs siècles d'histoire fascinante.
+                                Également connue sous le nom de Ville-Temple de l’Inde, elle est également un centre éducatif et culturel.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Adventure Awaits. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
