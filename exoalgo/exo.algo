@@ -1,0 +1,41 @@
+Algorithm: SentenceAnalyzer
+
+Variables:
+    length, vowels, words: integer
+    in_word: boolean
+    current_char: character
+
+Begin
+    length ← 0
+    vowels ← 0
+    words ← 0
+    in_word ← False
+
+    Read current_char
+
+    While current_char ≠ '.' Do
+        length ← length + 1
+
+        // Check for vowels
+        lower_char ← Lowercase(current_char)
+        If lower_char ∈ {'a', 'e', 'i', 'o', 'u'} Then
+            vowels ← vowels + 1
+
+        // Check for words
+        If current_char = ' ' Then
+            in_word ← False
+        Else
+            If NOT in_word Then
+                words ← words + 1
+                in_word ← True
+
+        Read current_char
+    End While
+
+    // Include the terminating '.' in length
+    length ← length + 1
+
+    Output "Length: ", length
+    Output "Words: ", words
+    Output "Vowels: ", vowels
+End
